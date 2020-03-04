@@ -229,23 +229,23 @@ while (monster.maxHealth > 0 && battlemage.maxHealth > 0)
     calculateDamage();
     dropCooldowns();
 
-    if (monster.maxHealth <= 0 && battlemage.maxHealth <= 0)
-    {
-        console.log(`Взаимное уничтожение. Поздравляем!`); 
-    }
+    let winner;    
 
-    if (monster.maxHealth <= 0 || battlemage.maxHealth <= 0)
-    {
-        let winner;
-        if (monster.maxHealth <= 0)
+        if (monster.maxHealth <= 0 && battlemage.maxHealth <= 0)
+        {
+            console.log(`Взаимное уничтожение. Поздравляем!`); 
+        }
+
+        else if (monster.maxHealth <= 0 && battlemage.maxHealth > 0)
         {
             winner = battlemage.name;
+            console.log(`Бой закончен, победил: ${winner}. Поздравляем!`);
         }
 
         else
         {
             winner = monster.name;
+            console.log(`Бой закончен, победил: ${winner}. Поздравляем!`);
         }
-        console.log(`Бой закончен, победил: ${winner}. Поздравляем!`);
-    }
+
 }
