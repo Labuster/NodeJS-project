@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-project-exp",
+  "version": "1.0.0",
+  "description": "Training project",
+  "main": "bulls.js",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bulls": "node bulls.js",
+    "rpg": "node rpgbattle.js",
+    "quiz": "node quiz.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Labuster/NodeJS-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Labuster/NodeJS-project/issues"
+  },
+  "homepage": "https://github.com/Labuster/NodeJS-project#readme"
+}
